@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: BlueTrash 2 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: c823f2a2f874241ebb0da27ad4f5c92a, type: 2}
+  sourceMesh: {fileID: 4300000, guid: 791144ad015e23f42b1c0737d94e6980, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    type: 1
+    colour: {r: 0, g: 1, b: 1, a: 0.3}
+    material: {fileID: 0}
+    isTrigger: 0
+    selectedFaces: ff0800006608000062080000c3070000c2070000d52b0000092c0000cf2b0000c92b0000ae2b0000852b0000802b00000c0500007f2b0000e12b00009809000097090000990900005f0800009d2b0000742b0000ea2b000048080000b82b00000d0500006004000008050000752b0000732b00005f040000970e00009c0e00005e0400005d040000950e00008a0e00008c0e0000fc040000110500006c040000140500008f2b0000160500006e0400006f0400005a050000ce050000180600001a0600001f06000050060000d9070000860800001a0900001b090000b7090000b4090000500a00004f0a0000490a0000
+    collisionMesh: {fileID: 0}
+    faceCollisionMesh: {fileID: 0}
+    collisionBox:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    hasColliderError: 0
+    numColliderFaces: 0

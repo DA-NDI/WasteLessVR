@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: group_0 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: eaf81fb6b77e5714aae38bbef084505f, type: 2}
+  sourceMesh: {fileID: 4300000, guid: c5057ec22b5d14943ba7aaa948f6f0c5, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    type: 1
+    colour: {r: 0, g: 1, b: 1, a: 0.3}
+    material: {fileID: 0}
+    isTrigger: 0
+    selectedFaces: 
+    collisionMesh: {fileID: 0}
+    faceCollisionMesh: {fileID: 0}
+    collisionBox:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    hasColliderError: 0
+    numColliderFaces: 0
