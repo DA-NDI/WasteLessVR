@@ -4,7 +4,7 @@ using UnityEngine;
 // using VRTK;
 
 public class DestroyTrash : MonoBehaviour {
-	public float destroyTime = 20.0f;
+	public float destroyTime = 30.0f;
 
 	void Update () {
 		// if(!this.gameObject.isGrabbed()){
