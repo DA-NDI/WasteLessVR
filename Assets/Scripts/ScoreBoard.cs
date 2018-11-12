@@ -123,8 +123,7 @@ public class ScoreBoard : MonoBehaviour {
 	}
 
 	void showText(string newHighscore, string newTime, string newScore){
-        if (!String.IsNullOrWhiteSpace(newHighscore))
-		    txtHighscore.text = newHighscore;
+		txtHighscore.text = newHighscore;
 		txtTime.text = newTime;
 		txtScore.text = newScore;
 	}
