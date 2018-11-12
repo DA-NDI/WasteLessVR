@@ -26,9 +26,9 @@ GameObject:
   - component: {fileID: 114318911949767160}
   - component: {fileID: 54550918914089926}
   - component: {fileID: 114099042686413182}
-  - component: {fileID: 114114109211586618}
   - component: {fileID: 114644691772304132}
   - component: {fileID: 136551868269621638}
+  - component: {fileID: 114555089322208126}
   m_Layer: 0
   m_Name: metal_sodacan
   m_TagString: MetalTrash
@@ -125,18 +125,6 @@ MonoBehaviour:
   objectToHighlight: {fileID: 0}
   objectHighlighter: {fileID: 0}
   objectToAffect: {fileID: 0}
---- !u!114 &114114109211586618
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1010634899150048}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a499df69980c46f4828ceaff69c7c18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!114 &114134475076568874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,6 +187,18 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
+--- !u!114 &114555089322208126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1010634899150048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbd6949076464363a48ed2bfe7c8a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 20
 --- !u!114 &114644691772304132
 MonoBehaviour:
   m_ObjectHideFlags: 1

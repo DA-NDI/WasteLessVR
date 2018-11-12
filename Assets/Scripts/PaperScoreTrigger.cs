@@ -25,7 +25,6 @@ public class PaperScoreTrigger : MonoBehaviour {
 				scoreBoard.handleWrongScored();
 				break;
 		}	
-			Trash trash = col.gameObject.GetComponent<Trash>();
-			trash.setSpeedToZero();
+			
 	}
 }

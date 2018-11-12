@@ -140,11 +140,11 @@ public class ScoreBoard : MonoBehaviour {
 	// 	updateTexts();
 	// }
 
-	public void resetTrash(Trash trash){
-		Rigidbody rg = trash.GetComponent<Rigidbody>();
-		rg.velocity = Vector3.zero;
-		rg.angularVelocity = Vector3.zero;
-		rg.transform.rotation = Quaternion.identity;
-		// rg.transform.position = resetPos.transform.position;
-	}
+	// public void resetTrash(Trash trash){
+	// 	Rigidbody rg = trash.GetComponent<Rigidbody>();
+	// 	rg.velocity = Vector3.zero;
+	// 	rg.angularVelocity = Vector3.zero;
+	// 	rg.transform.rotation = Quaternion.identity;
+	// 	// rg.transform.position = resetPos.transform.position;
+	// }
 }

@@ -26,9 +26,9 @@ GameObject:
   - component: {fileID: 114128000791179614}
   - component: {fileID: 54954173713586374}
   - component: {fileID: 114259181473564890}
-  - component: {fileID: 114451486405149138}
   - component: {fileID: 135282387012505148}
   - component: {fileID: 136531192524121730}
+  - component: {fileID: 114549142014092458}
   m_Layer: 0
   m_Name: glass_glass
   m_TagString: GlassTrash
@@ -136,18 +136,18 @@ MonoBehaviour:
   objectToHighlight: {fileID: 0}
   objectHighlighter: {fileID: 0}
   objectToAffect: {fileID: 0}
---- !u!114 &114451486405149138
+--- !u!114 &114549142014092458
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1732871676938672}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a499df69980c46f4828ceaff69c7c18, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cbd6949076464363a48ed2bfe7c8a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  destroyTime: 10
 --- !u!114 &114693314259253638
 MonoBehaviour:
   m_ObjectHideFlags: 1

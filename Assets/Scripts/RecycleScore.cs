@@ -22,7 +22,6 @@ public class RecycleScore : MonoBehaviour {
 				scoreBoard.handleWrongScored();
 				break;
 		}	
-			Trash trash = col.gameObject.GetComponent<Trash>();
-			trash.setSpeedToZero();
+			
 	}
 }

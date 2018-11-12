@@ -25,7 +25,6 @@ public class NonRecycleScore : MonoBehaviour {
 				scoreBoard.handleScored();
 				break;
 		}	
-			Trash trash = col.gameObject.GetComponent<Trash>();
-			trash.setSpeedToZero();
+			
 	}
 }

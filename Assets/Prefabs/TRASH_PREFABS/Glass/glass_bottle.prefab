@@ -26,8 +26,8 @@ GameObject:
   - component: {fileID: 114935201558110034}
   - component: {fileID: 54153686307409530}
   - component: {fileID: 114323757689874036}
-  - component: {fileID: 114518189763703912}
   - component: {fileID: 114537612697778994}
+  - component: {fileID: 114362611113502646}
   - component: {fileID: 136518388601923790}
   m_Layer: 0
   m_Name: glass_bottle
@@ -44,7 +44,7 @@ Transform:
   m_GameObject: {fileID: 1271734170661178}
   m_LocalRotation: {x: 0.7071045, y: -0.0018080323, z: 0.0018080323, w: 0.7071045}
   m_LocalPosition: {x: 5.839006, y: 2.2214572, z: 2.4052114}
-  m_LocalScale: {x: 7, y: 15, z: 7}
+  m_LocalScale: {x: 10, y: 20, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -157,18 +157,18 @@ MonoBehaviour:
   objectToHighlight: {fileID: 0}
   objectHighlighter: {fileID: 0}
   objectToAffect: {fileID: 0}
---- !u!114 &114518189763703912
+--- !u!114 &114362611113502646
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1271734170661178}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a499df69980c46f4828ceaff69c7c18, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cbd6949076464363a48ed2bfe7c8a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  destroyTime: 10
 --- !u!114 &114537612697778994
 MonoBehaviour:
   m_ObjectHideFlags: 1
