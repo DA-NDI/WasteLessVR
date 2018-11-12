@@ -488,17 +488,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playTime: 30
-  currentHighScore: 0
   currentScore: 0
   currentTime: 0
   playMusic: {fileID: 0}
   idleMusic: {fileID: 0}
   endGameSound: {fileID: 0}
-  highScoreSound: {fileID: 0}
   scoreSound: {fileID: 0}
   errorScore: {fileID: 0}
   musicAudioSource: {fileID: 0}
-  txtHighscore: {fileID: 0}
   txtTime: {fileID: 0}
   txtScore: {fileID: 0}
 --- !u!1 &174024218
@@ -1143,6 +1140,7 @@ GameObject:
   - component: {fileID: 344414359}
   - component: {fileID: 344414362}
   - component: {fileID: 344414361}
+  - component: {fileID: 344414360}
   m_Layer: 0
   m_Name: New Text
   m_TagString: Untagged
@@ -1163,6 +1161,38 @@ Transform:
   m_Father: {fileID: 1426132741}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344414360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344414358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableWhenIdle: 1
+  allowedNearTouchControllers: 0
+  allowedTouchControllers: 0
+  ignoredColliders: []
+  isGrabbable: 0
+  holdButtonToGrab: 1
+  stayGrabbedOnTeleport: 1
+  validDrop: 1
+  grabOverrideButton: 0
+  allowedGrabControllers: 0
+  grabAttachMechanicScript: {fileID: 0}
+  secondaryGrabActionScript: {fileID: 0}
+  isUsable: 0
+  holdButtonToUse: 1
+  useOnlyIfGrabbed: 0
+  pointerActivatesUseAction: 0
+  useOverrideButton: 0
+  allowedUseControllers: 0
+  objectHighlighter: {fileID: 0}
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  usingState: 0
 --- !u!102 &344414361
 TextMesh:
   serializedVersion: 3
@@ -3090,17 +3120,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playTime: 120
-  currentHighScore: 0
   currentScore: 0
   currentTime: 10
   playMusic: {fileID: 8300000, guid: d9e62ad39635247b4b18da9f9df1aaae, type: 3}
   idleMusic: {fileID: 8300000, guid: 371e924e908a6433eb6c1b9a91d4c513, type: 3}
   endGameSound: {fileID: 8300000, guid: 1f572e99d534e4dfaba3d0c7bf43bd3a, type: 3}
-  highScoreSound: {fileID: 8300000, guid: 3609d8af7e2004c1aa4ad326065c9dc7, type: 3}
   scoreSound: {fileID: 8300000, guid: 3609d8af7e2004c1aa4ad326065c9dc7, type: 3}
   errorScore: {fileID: 8300000, guid: 20212754079d14cfb8e5110dece25beb, type: 3}
   musicAudioSource: {fileID: 0}
-  txtHighscore: {fileID: 811832042}
   txtTime: {fileID: 1340161017}
   txtScore: {fileID: 100406457}
 --- !u!114 &1093267488
@@ -3632,7 +3659,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3687,10 +3714,10 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 1426132745}
   secondaryGrabActionScript: {fileID: 1426132744}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0
-  pointerActivatesUseAction: 0
+  pointerActivatesUseAction: 1
   useOverrideButton: 0
   allowedUseControllers: 0
   objectHighlighter: {fileID: 0}
@@ -3758,7 +3785,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426132740}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4252,17 +4279,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playTime: 30
-  currentHighScore: 0
   currentScore: 0
   currentTime: 0
   playMusic: {fileID: 0}
   idleMusic: {fileID: 0}
   endGameSound: {fileID: 0}
-  highScoreSound: {fileID: 0}
   scoreSound: {fileID: 0}
   errorScore: {fileID: 0}
   musicAudioSource: {fileID: 0}
-  txtHighscore: {fileID: 0}
   txtTime: {fileID: 0}
   txtScore: {fileID: 0}
 --- !u!1001 &1555287830
@@ -4823,12 +4847,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 0}
-  actualHeadset: {fileID: 0}
-  actualLeftController: {fileID: 0}
-  actualRightController: {fileID: 0}
-  modelAliasLeftController: {fileID: 0}
-  modelAliasRightController: {fileID: 0}
+  actualBoundaries: {fileID: 325198075}
+  actualHeadset: {fileID: 1451970021}
+  actualLeftController: {fileID: 332562090}
+  actualRightController: {fileID: 749532856}
+  modelAliasLeftController: {fileID: 367648110}
+  modelAliasRightController: {fileID: 1841007746}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem
