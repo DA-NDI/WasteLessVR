@@ -16,44 +16,52 @@
             activate = false;
             linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
 
-            if (linkedObject != null)
-            {
-                linkedObject.InteractableObjectUsed += InteractableObjectUsed;
-                linkedObject.InteractableObjectUnused += InteractableObjectUnused;
-            }
+     //       if (linkedObject != null)
+     //       {
+     //           linkedObject.InteractableObjectUsed += InteractableObjectUsed;
+     //           linkedObject.InteractableObjectUnused += InteractableObjectUnused;
+     //       }
 
         }
 
-        protected virtual void OnDisable()
-        {
-            if (linkedObject != null)
-            {
-                Debug.Log("i'm enabled");
-                linkedObject.InteractableObjectUsed -= InteractableObjectUsed;
-                linkedObject.InteractableObjectUnused -= InteractableObjectUnused;
-            }
-        }
+    //    protected virtual void OnDisable()
+    //    {
+    //        if (linkedObject != null)
+    //        {
+    //            Debug.Log("i'm enabled");
+    //            linkedObject.InteractableObjectUsed -= InteractableObjectUsed;
+    //            linkedObject.InteractableObjectUnused -= InteractableObjectUnused;
+    //        }
+    //    }
 
         protected virtual void Update()
         {
-            if (activate)
-            {
-                cube.SetActive(true);
-            } else if (!activate)
-            {
-                cube.SetActive(false);
-            }
+            if (linkedObject.IsGrabbed() || linkedObject.IsUsing() == true)
+                activate = true;
+            else
+                activate = false;
+            cube.SetActive(activate);
+            //else
+            //      {
+            //           cube.SetActive(false);
+            //       }
         }
-
-        protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
+        public virtual void StartUsing()
         {
-            activate = true;
+            Debug.Log("HEY!!!!");
+            activate = !activate;
+      //      cube.SetActive(activate);
         }
+//        protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
+//      {
+//          Debug.Log("i'm used");
+//         activate = true;
+//    }
 
-        protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
-        {
-            activate = false;
-        }
+        //     protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
+        //    {
+        //         activate = false;
+        //     }
     }
 }
 
