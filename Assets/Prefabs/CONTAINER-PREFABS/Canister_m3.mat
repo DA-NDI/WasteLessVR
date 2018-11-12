@@ -4,11 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Canister_m3
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP
+  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -47,7 +47,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c9c0e8e498e9fd84ebb748fb9a4f2287, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -86,7 +86,7 @@ Material:
     - _Emission3channel: 0
     - _Emissionadd: 0
     - _Gloss: 0.8
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.8
     - _Glossiness: 0.26
     - _GlossyReflections: 1
     - _MetallContrast: 1
@@ -112,7 +112,7 @@ Material:
     - _noisestr: 0
     - _normalstr: 1
     m_Colors:
-    - _Color: {r: 0.93988353, g: 0.9811321, b: 0.1342115, a: 1}
+    - _Color: {r: 0.27205884, g: 0.27205884, b: 0.27205884, a: 1}
     - _DiffuseColor: {r: 0.3227184, g: 0.3429779, b: 0.3455882, a: 1}
     - _Dirtcolor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

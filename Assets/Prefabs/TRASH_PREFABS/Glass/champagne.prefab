@@ -28,7 +28,11 @@ GameObject:
   - component: {fileID: 114523105843433742}
   - component: {fileID: 136166782386083028}
   m_Layer: 0
+<<<<<<< HEAD:Assets/Prefabs/TRASH_PREFABS/Glass/champagne.prefab
   m_Name: champagne
+=======
+  m_Name: glass_champagne_bottle 1
+>>>>>>> e716bcb2e9372aa95351829b6ca79ef3a63d0942:Assets/Prefabs/Trash/Glass/glass_champagne_bottle 1.prefab
   m_TagString: GlassTrash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/TRASH_PREFABS/Organic-Waste/test/trash_bag.prefab.meta
 guid: d64842818d4a34705a1a4289ab77ff07
+=======
+guid: bbb4ddf0f44b39e449e68a7d95217c55
+>>>>>>> e716bcb2e9372aa95351829b6ca79ef3a63d0942:Assets/Prefabs/Trash/Organic-Waste/trash_bag.prefab.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 100100000
