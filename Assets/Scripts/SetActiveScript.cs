@@ -36,7 +36,7 @@
 
         protected virtual void Update()
         {
-            if (linkedObject.IsGrabbed() || linkedObject.IsUsing() == true)
+            if (linkedObject.IsGrabbed() || linkedObject.IsUsing() == true || linkedObject.usingState == 1)
                 activate = true;
             else
                 activate = false;
@@ -46,7 +46,7 @@
             //           cube.SetActive(false);
             //       }
         }
-        public virtual void StartUsing()
+        public virtual void InteractUse()
         {
             Debug.Log("HEY!!!!");
             activate = !activate;
