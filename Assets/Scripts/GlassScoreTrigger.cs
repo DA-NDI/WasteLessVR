@@ -7,8 +7,11 @@ public class GlassScoreTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider col){	
 		switch(col.tag){
 			case "GlassTrash":
-				scoreBoard.handleScored();
-				break;
+				{
+                    Destroy(col.gameObject);
+                    scoreBoard.handleScored();
+                    break;
+                }
 			case "PlasticTrash":
 				scoreBoard.handleWrongScored();
 				break;

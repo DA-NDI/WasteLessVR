@@ -8,24 +8,24 @@ public class ScoreBoard : MonoBehaviour {
 	public int playTime = 120;
 	// public resetPos resetPos;
 	bool isGameRunning = false;
-	public int currentHighScore = 0;
+	// public int currentHighScore = 0;
 	public int currentScore = 0;
 	public float currentTime = 0.0f;
 	public AudioClip playMusic;
 	public AudioClip idleMusic;
 	public AudioClip endGameSound;
-	public AudioClip highScoreSound;
+	// public AudioClip highScoreSound;
 	public AudioClip scoreSound;
 	public AudioClip errorScore;
 	public AudioSource musicAudioSource;
 	bool displayTransition = false;
 	
-	public Text txtHighscore;
+	// public Text txtHighscore;
 	public Text txtTime;
 	public Text txtScore;
 	// public Wall wall;
 	//constants
-	const string HIGHSCORE="HIGHSCORE";
+	// const string HIGHSCORE="HIGHSCORE";
 
 	public void handleGameStart(){
 		if(!isGameRunning){
@@ -52,27 +52,27 @@ public class ScoreBoard : MonoBehaviour {
 
 	void handleGameEnd(){
 		isGameRunning = false;
-		if(currentScore >currentHighScore){
-			handleNewHighScore();
-		}
+		// if(currentScore >currentHighScore){
+		// 	handleNewHighScore();
+		// }
 		currentTime = playTime;
 		currentScore = 0;
 		startSound(endGameSound);
 		startMusic(musicAudioSource, idleMusic);
 		// wall.wallFall();
 	}
-	void handleNewHighScore(){
-		saveHighScore(currentScore);
-		currentHighScore = currentScore;
-		startSound(highScoreSound);
-		//TODO: Make some highscore transition;
-	}
-	void loadingHighScore(){
-		currentHighScore = PlayerPrefs.GetInt(HIGHSCORE);
-	}
-	void saveHighScore(int newHighscore){
-		 PlayerPrefs.SetInt(HIGHSCORE, newHighscore);
-	}
+	// void handleNewHighScore(){
+	// 	saveHighScore(currentScore);
+	// 	currentHighScore = currentScore;
+	// 	startSound(highScoreSound);
+	// 	//TODO: Make some highscore transition;
+	// }
+	// void loadingHighScore(){
+	// 	currentHighScore = PlayerPrefs.GetInt(HIGHSCORE);
+	// }
+	// void saveHighScore(int newHighscore){
+	// 	 PlayerPrefs.SetInt(HIGHSCORE, newHighscore);
+	// }
 
 	public void handleScored(){
 		if(isGameRunning){
@@ -90,7 +90,7 @@ public class ScoreBoard : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		musicAudioSource = GetComponent<AudioSource>();
-		loadingHighScore();
+		// loadingHighScore();
 		// handleGameEnd();
 		handleGameStart();
 	}
@@ -118,28 +118,27 @@ public class ScoreBoard : MonoBehaviour {
 			}else{
 				timeDisplay = "" + (int)((float)playTime-currentTime);
 			}
-			showText("" + currentHighScore, timeDisplay, "" + currentScore);
+			showText("" + timeDisplay, "" + currentScore);
 		}
 	}
 
-	void showText(string newHighscore, string newTime, string newScore){
-		txtHighscore.text = newHighscore;
+	void showText( string newTime, string newScore){
 		txtTime.text = newTime;
 		txtScore.text = newScore;
 	}
 
-	IEnumerator newHighScoreTransition(){
-		displayTransition = true;
-		showText("***", "***", "***");
-		yield return new WaitForSeconds(1f);
-		showText("NEW", "HI", "SCR");
-		yield return new WaitForSeconds(1f);
-		showText("***", "***", "***");
-		yield return new WaitForSeconds(1f);
+	// IEnumerator newHighScoreTransition(){
+	// 	displayTransition = true;
+	// 	showText("***", "***", "***");
+	// 	yield return new WaitForSeconds(1f);
+	// 	showText("NEW", "HI", "SCR");
+	// 	yield return new WaitForSeconds(1f);
+	// 	showText("***", "***", "***");
+	// 	yield return new WaitForSeconds(1f);
 
-		displayTransition = false;
-		updateTexts();
-	}
+	// 	displayTransition = false;
+	// 	updateTexts();
+	// }
 
 	public void resetTrash(Trash trash){
 		Rigidbody rg = trash.GetComponent<Rigidbody>();

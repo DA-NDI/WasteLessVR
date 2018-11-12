@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.056994572, g: 0.077466235, b: 0.09649895, a: 1}
+  m_IndirectSpecularColor: {r: 0.05698628, g: 0.0775556, b: 0.09651723, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5234,12 +5234,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 0}
-  actualHeadset: {fileID: 0}
-  actualLeftController: {fileID: 0}
-  actualRightController: {fileID: 0}
-  modelAliasLeftController: {fileID: 0}
-  modelAliasRightController: {fileID: 0}
+  actualBoundaries: {fileID: 79540139}
+  actualHeadset: {fileID: 1710588312}
+  actualLeftController: {fileID: 58219778}
+  actualRightController: {fileID: 1209758943}
+  modelAliasLeftController: {fileID: 836588444}
+  modelAliasRightController: {fileID: 567631025}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem

@@ -7,8 +7,11 @@ public class PlasticScoreTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider col){	
 		switch(col.tag){
 			case "PlasticTrash":
-				scoreBoard.handleScored();
-				break;
+				{
+                    Destroy(col.gameObject);
+                    scoreBoard.handleScored();
+                    break;
+                }
 			case "PaperTrash":
 				scoreBoard.handleWrongScored();
 				break;
