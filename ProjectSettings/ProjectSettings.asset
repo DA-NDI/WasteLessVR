@@ -712,7 +712,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: aece0ae2-b9bf-43f8-ab31-41f7fbba9f14
-  projectName: 
+  projectName: TrashGame
   organizationId: svitlua
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

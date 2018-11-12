@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: bea4a4bbf76b67e4db47dc3b1c70fbe7
+timeCreated: 1528456510
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Truck01_BodyDump
+    100002: Truck01_BodyDump1
+    100004: Truck01_BodyDump2
+    100006: Truck01_BodyDump3
+    100008: Truck01_Cabin
+    100010: //RootNode
+    100012: Truck01_Frame
+    100014: Truck01_Glass
+    100016: Truck01Interior
+    100018: Truck01_Body
+    100020: Truck01_Dump
+    100022: Truck01_DumpBack
+    100024: Truck01_DumpPump1
+    100026: Truck01_DumpPump2
+    100028: Truck01_Interior
+    400000: Truck01_BodyDump
+    400002: Truck01_BodyDump1
+    400004: Truck01_BodyDump2
+    400006: Truck01_BodyDump3
+    400008: Truck01_Cabin
+    400010: //RootNode
+    400012: Truck01_Frame
+    400014: Truck01_Glass
+    400016: Truck01Interior
+    400018: Truck01_Body
+    400020: Truck01_Dump
+    400022: Truck01_DumpBack
+    400024: Truck01_DumpPump1
+    400026: Truck01_DumpPump2
+    400028: Truck01_Interior
+    2300000: Truck01_BodyDump
+    2300002: Truck01_BodyDump1
+    2300004: Truck01_BodyDump2
+    2300006: Truck01_BodyDump3
+    2300008: Truck01_Cabin
+    2300010: Truck01_Frame
+    2300012: Truck01_Glass
+    2300014: Truck01Interior
+    2300016: Truck01_Body
+    2300018: Truck01_Dump
+    2300020: Truck01_DumpBack
+    2300022: Truck01_DumpPump1
+    2300024: Truck01_DumpPump2
+    2300026: Truck01_Interior
+    3300000: Truck01_BodyDump
+    3300002: Truck01_BodyDump1
+    3300004: Truck01_BodyDump2
+    3300006: Truck01_BodyDump3
+    3300008: Truck01_Cabin
+    3300010: Truck01_Frame
+    3300012: Truck01_Glass
+    3300014: Truck01Interior
+    3300016: Truck01_Body
+    3300018: Truck01_Dump
+    3300020: Truck01_DumpBack
+    3300022: Truck01_DumpPump1
+    3300024: Truck01_DumpPump2
+    3300026: Truck01_Interior
+    4300000: Truck01_BodyDump
+    4300002: Truck01_Cabin
+    4300004: Truck01Interior
+    4300006: Truck01_Glass
+    4300008: Truck01_Frame
+    4300010: Truck01_BodyDump1
+    4300012: Truck01_BodyDump2
+    4300014: Truck01_BodyDump3
+    4300016: Truck01_Dump
+    4300018: Truck01_Interior
+    4300020: Truck01_Body
+    4300022: Truck01_DumpBack
+    4300024: Truck01_DumpPump1
+    4300026: Truck01_DumpPump2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
