@@ -23,7 +23,7 @@ public class ScoreBoard : MonoBehaviour {
 	public Text txtHighscore;
 	public Text txtTime;
 	public Text txtScore;
-	public Wall wall;
+	// public Wall wall;
 	//constants
 	const string HIGHSCORE="HIGHSCORE";
 
@@ -59,7 +59,7 @@ public class ScoreBoard : MonoBehaviour {
 		currentScore = 0;
 		startSound(endGameSound);
 		startMusic(musicAudioSource, idleMusic);
-		wall.wallFall();
+		// wall.wallFall();
 	}
 	void handleNewHighScore(){
 		saveHighScore(currentScore);

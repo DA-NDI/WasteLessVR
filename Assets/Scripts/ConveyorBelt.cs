@@ -6,7 +6,7 @@ public class ConveyorBelt : MonoBehaviour {
 
 	public GameObject conveyor;
 	public Transform endpoint;
-	public float speed=.1f;
+	public float speed=0.05f;
 
 	void OnTriggerStay(Collider other){
 		other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed*Time.deltaTime);
