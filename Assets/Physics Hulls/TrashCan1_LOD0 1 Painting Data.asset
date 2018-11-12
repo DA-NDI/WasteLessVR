@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de965f2e710c1c489ead8e62cd25da0, type: 3}
+  m_Name: TrashCan1_LOD0 1 Painting Data
+  m_EditorClassIdentifier: 
+  hullData: {fileID: 11400000, guid: d6a51efa74f8fbe4cbbf81638acf43df, type: 2}
+  sourceMesh: {fileID: 4300010, guid: ccdb2211498fab844b3ba61b56bc9370, type: 3}
+  activeHull: 0
+  faceThickness: 0.1
+  hulls:
+  - name: Hull 1
+    type: 0
+    colour: {r: 0, g: 1, b: 1, a: 0.3}
+    material: {fileID: 0}
+    isTrigger: 1
+    selectedFaces: 49010000d10100003d010000cf0100003a010000410100004301000046010000450100003e010000400100003f010000380100004201000039010000fd010000fe01000001020000ff01000044010000020200003b010000fc010000d00100003c010000040200000302000000020000d30100000502000047010000d2010000d401000048010000
+    collisionMesh: {fileID: 0}
+    faceCollisionMesh: {fileID: 0}
+    collisionBox:
+      m_Center: {x: 0, y: 0.5331936, z: 0.000000014901161}
+      m_Extent: {x: 0.31654832, y: 0.51741064, z: 0.3165484}
+    hasColliderError: 0
+    numColliderFaces: 0

@@ -31,7 +31,7 @@ GameObject:
   - component: {fileID: 135291503428272824}
   - component: {fileID: 136166782386083028}
   m_Layer: 0
-  m_Name: glass_champagne_bottle
+  m_Name: glass_champagne_bottle 1
   m_TagString: GlassTrash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
