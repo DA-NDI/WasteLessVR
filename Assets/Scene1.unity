@@ -1261,6 +1261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92526c0236294438bdd8c91976f38bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  conveyer: {fileID: 0}
   playTime: 30
   currentScore: 0
   currentTime: 0
@@ -1272,6 +1274,7 @@ MonoBehaviour:
   musicAudioSource: {fileID: 0}
   txtTime: {fileID: 0}
   txtScore: {fileID: 0}
+  menuResultMsg: {fileID: 0}
 --- !u!1001 &173776046
 Prefab:
   m_ObjectHideFlags: 0
@@ -8060,6 +8063,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92526c0236294438bdd8c91976f38bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  conveyer: {fileID: 0}
   playTime: 120
   currentScore: 0
   currentTime: 120
@@ -8071,6 +8076,7 @@ MonoBehaviour:
   musicAudioSource: {fileID: 0}
   txtTime: {fileID: 1340161017}
   txtScore: {fileID: 100406457}
+  menuResultMsg: {fileID: 0}
 --- !u!114 &1093267488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9380,10 +9386,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1237798702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eff2aea8174ee408b080be0f6c1e4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 44ca2182db0231e479a5f317db093d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreBoard: {fileID: 1093267487}
+  scoreBoard1: {fileID: 1093267487}
 --- !u!65 &1237798705
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11995,6 +12001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92526c0236294438bdd8c91976f38bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  conveyer: {fileID: 0}
   playTime: 30
   currentScore: 0
   currentTime: 0
@@ -12006,6 +12014,7 @@ MonoBehaviour:
   musicAudioSource: {fileID: 0}
   txtTime: {fileID: 0}
   txtScore: {fileID: 0}
+  menuResultMsg: {fileID: 0}
 --- !u!1001 &1546651250
 Prefab:
   m_ObjectHideFlags: 0
