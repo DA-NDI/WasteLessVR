@@ -8145,7 +8145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be65bf74e97187e45ab2386b01e3ab6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playTime: 10
+  playTime: 100
   currentScore: 0
   currentTime: 10
   playMusic: {fileID: 8300000, guid: d9e62ad39635247b4b18da9f9df1aaae, type: 3}
@@ -18904,12 +18904,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPopulateObjectReferences: 1
-  actualBoundaries: {fileID: 0}
-  actualHeadset: {fileID: 0}
-  actualLeftController: {fileID: 0}
-  actualRightController: {fileID: 0}
-  modelAliasLeftController: {fileID: 0}
-  modelAliasRightController: {fileID: 0}
+  actualBoundaries: {fileID: 325198075}
+  actualHeadset: {fileID: 1451970021}
+  actualLeftController: {fileID: 332562090}
+  actualRightController: {fileID: 749532856}
+  modelAliasLeftController: {fileID: 367648110}
+  modelAliasRightController: {fileID: 1841007746}
   cachedSystemSDKInfo:
     baseTypeName: VRTK.SDK_BaseSystem
     fallbackTypeName: VRTK.SDK_FallbackSystem

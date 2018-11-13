@@ -127,7 +127,7 @@ public class ScoreBoard1 : MonoBehaviour {
 	//		}
 	if (playTime - currentTime <= 0)
 	{
-		Application.LoadLevel(1);
+		Application.LoadLevel(2);
 	//	 SceneManager.LoadScene(scenePaths[0], LoadSceneMode.Single);
 	// Time.timeScale = 0;
 	//		 SceneManager.LoadScene("Scene2", LoadSceneMode.Additive);
