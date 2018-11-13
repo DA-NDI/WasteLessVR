@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class RecycleScore : MonoBehaviour {
 	public ScoreBoard scoreBoard;
-	void OnTriggerEnter(Collider col){	
-		switch(col.tag){
-			case "MetalTrash":
-				scoreBoard.handleScored();
-				break;
-			case "PlasticTrash":
-				scoreBoard.handleScored();
-				break;
-			case "PaperTrash":
-				scoreBoard.handleScored();
-				break;
-			case "GlassTrash":
-				scoreBoard.handleScored();
-				break;
-			case "Waste":
-				scoreBoard.handleWrongScored();
-				break;
-		}	
-			Trash trash = col.gameObject.GetComponent<Trash>();
-			trash.setSpeedToZero();
+	void OnTriggerEnter(Collider col){
+		if (col.tag == "MetalTrash" || col.tag == "PlasticTrash" 
+		|| col.tag == "PaperTrash" || col.tag == "GlassTrash")
+		{
+			scoreBoard.handleScored();
+			Destroy(col.gameObject);
+		}
+		else
+			scoreBoard.handleWrongScored();
+		Trash trash = col.gameObject.GetComponent<Trash>();
+		trash.setSpeedToZero();
 	}
 }

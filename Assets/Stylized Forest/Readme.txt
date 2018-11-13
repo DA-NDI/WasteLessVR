@@ -1,0 +1,1 @@
+If you want using demo scenes, you need to install the Post-Processing Stack and Legacy Image Effects. If you using Unity 2018, set Color Space to Gamma for correct work with demo scenes (Edit --> Build Settings --> Player Settings --> Other Settings --> Color Space)

@@ -7,11 +7,8 @@ public class NonRecycleScore : MonoBehaviour {
 	void OnTriggerEnter(Collider col){	
 		switch(col.tag){
 			case "MetalTrash":
-                {
-                    Debug.Log("Catched metal");
                     scoreBoard.handleWrongScored();
                     break;
-                }
 			case "PlasticTrash":
 				scoreBoard.handleWrongScored();
 				break;
@@ -22,8 +19,11 @@ public class NonRecycleScore : MonoBehaviour {
 				scoreBoard.handleWrongScored();
 				break;
 			case "Waste":
+			{
 				scoreBoard.handleScored();
+				Destroy(col.gameObject);
 				break;
+			}
 		}	
 			Trash trash = col.gameObject.GetComponent<Trash>();
 			trash.setSpeedToZero();
