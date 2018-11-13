@@ -26,8 +26,8 @@ GameObject:
   - component: {fileID: 114375038757395352}
   - component: {fileID: 54036655258577704}
   - component: {fileID: 114678299526665286}
-  - component: {fileID: 114583473799592470}
   - component: {fileID: 136780370286171074}
+  - component: {fileID: 114272511288745096}
   m_Layer: 0
   m_Name: metal_spring
   m_TagString: MetalTrash
@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894391654539030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.7343445, y: 2.7266376, z: 1.6390314}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,6 +105,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114272511288745096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894391654539030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbd6949076464363a48ed2bfe7c8a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 20
 --- !u!114 &114375038757395352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,18 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114583473799592470
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1894391654539030}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a499df69980c46f4828ceaff69c7c18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!114 &114678299526665286
 MonoBehaviour:
   m_ObjectHideFlags: 1

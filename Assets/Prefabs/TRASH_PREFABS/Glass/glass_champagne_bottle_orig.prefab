@@ -26,8 +26,8 @@ GameObject:
   - component: {fileID: 114728901364365490}
   - component: {fileID: 54998245457115374}
   - component: {fileID: 114523105843433742}
-  - component: {fileID: 114828230812330184}
   - component: {fileID: 136166782386083028}
+  - component: {fileID: 114028641268965590}
   m_Layer: 0
   m_Name: glass_champagne_bottle_orig
   m_TagString: GlassTrash
@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1301968749622672}
   m_LocalRotation: {x: -0, y: 0.72569704, z: -0, w: 0.6880144}
-  m_LocalPosition: {x: 0.1, y: 2.3, z: 1.87}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0015, y: 0.0015, z: 0.0015}
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,6 +105,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114028641268965590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1301968749622672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbd6949076464363a48ed2bfe7c8a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 10
 --- !u!114 &114443149396561112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,18 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114828230812330184
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1301968749622672}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a499df69980c46f4828ceaff69c7c18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!136 &136166782386083028
 CapsuleCollider:
   m_ObjectHideFlags: 1

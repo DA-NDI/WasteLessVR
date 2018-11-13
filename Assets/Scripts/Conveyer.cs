@@ -7,7 +7,7 @@ public class Conveyer : MonoBehaviour {
 	public GameObject[] trashArrayPlastic;
 	public GameObject[] trashArrayMetal;
 	public GameObject[] trashArrayGlass;
-	public GameObject[] trashArrayWaste;
+	// public GameObject[] trashArrayWaste;
 	public Vector3 trashValues;
 	public float trashWait;
 	public float trashMostWait;
@@ -16,6 +16,7 @@ public class Conveyer : MonoBehaviour {
 	public bool stop;
 	int randomTrashArray;
 	int randomTrashNum;
+	public bool isPlaying = true;
 	
 	void Start () {
 		StartCoroutine(waitTrash());
@@ -24,15 +25,20 @@ public class Conveyer : MonoBehaviour {
 	
 	
 	void Update () {
-		trashWait = Random.Range(trashLeastWait, trashMostWait);
-		
+		if(isPlaying){
+			trashWait = Random.Range(trashLeastWait, trashMostWait);
+		}
+	}
+
+	public void stopConveyer(){
+		isPlaying = false;
 	}
 
 	IEnumerator waitTrash(){
 		yield return new WaitForSeconds(startWait);
 
-		while(!stop){
-			randomTrashArray = Random.Range(0, 5);
+		while(isPlaying){
+			randomTrashArray = Random.Range(0, 4);
 			randomTrashNum = Random.Range(0, 3); 
 			Vector3 trashPosition = new Vector3(Random.Range(-trashValues.x, trashValues.x), 1, Random.Range(-trashValues.z, trashValues.z));
 			switch (randomTrashArray)
@@ -49,9 +55,9 @@ public class Conveyer : MonoBehaviour {
 					case 4:
 						Instantiate(trashArrayGlass[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
 						break;
-					case 5:
-						Instantiate(trashArrayWaste[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-						break;
+					// case 5:
+					// 	Instantiate(trashArrayWaste[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+					// 	break;
 
 				} 
 			

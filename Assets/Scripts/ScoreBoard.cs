@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreBoard : MonoBehaviour {
-
+	public GameObject menu;
+	public Conveyer conveyer;
 	public int playTime = 120;
 	// public resetPos resetPos;
 	bool isGameRunning = false;
@@ -23,6 +24,7 @@ public class ScoreBoard : MonoBehaviour {
 	// public Text txtHighscore;
 	public Text txtTime;
 	public Text txtScore;
+	public Text menuResultMsg;
 	// public Wall wall;
 	//constants
 	// const string HIGHSCORE="HIGHSCORE";
@@ -33,6 +35,7 @@ public class ScoreBoard : MonoBehaviour {
 			currentTime = 0;
 			isGameRunning = true;
 			startMusic(musicAudioSource, playMusic);
+			menu.SetActive(false);
 		}
 	}
 	void startMusic(AudioSource audioSrc, AudioClip clip){
@@ -55,6 +58,11 @@ public class ScoreBoard : MonoBehaviour {
 		// if(currentScore >currentHighScore){
 		// 	handleNewHighScore();
 		// }
+		
+
+		menuResultMsg.text = "Ви відсортували\nлише "+currentScore+" предметів";
+		menu.SetActive(true);
+		conveyer.stopConveyer();
 		currentTime = playTime;
 		currentScore = 0;
 		startSound(endGameSound);
@@ -107,17 +115,18 @@ public class ScoreBoard : MonoBehaviour {
 		if(currentTime>playTime){
 			handleGameEnd();
 		}
+
 		updateTexts();
 	}
 	
 	void updateTexts(){
 		if(!displayTransition){
 			string timeDisplay = "";
-			if(currentTime > playTime - 5){
-				timeDisplay = string.Format(("0:0#.00"), ((float)playTime-currentTime));
-			}else{
+			// if(currentTime > playTime - 5){
+			// 	timeDisplay = string.Format(("0:0#.00"), ((float)playTime-currentTime));
+			// }else{
 				timeDisplay = "" + (int)((float)playTime-currentTime);
-			}
+			// }
 			showText("" + timeDisplay, "" + currentScore);
 		}
 	}
@@ -140,11 +149,11 @@ public class ScoreBoard : MonoBehaviour {
 	// 	updateTexts();
 	// }
 
-	public void resetTrash(Trash trash){
-		Rigidbody rg = trash.GetComponent<Rigidbody>();
-		rg.velocity = Vector3.zero;
-		rg.angularVelocity = Vector3.zero;
-		rg.transform.rotation = Quaternion.identity;
-		// rg.transform.position = resetPos.transform.position;
-	}
+	// public void resetTrash(Trash trash){
+	// 	Rigidbody rg = trash.GetComponent<Rigidbody>();
+	// 	rg.velocity = Vector3.zero;
+	// 	rg.angularVelocity = Vector3.zero;
+	// 	rg.transform.rotation = Quaternion.identity;
+	// 	// rg.transform.position = resetPos.transform.position;
+	// }
 }
