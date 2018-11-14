@@ -27,7 +27,7 @@
         public bool buttonTwoButtonEvents = true;
         public bool startMenuButtonEvents = true;
 
-        protected static bool  avdvfd = false;
+        protected static bool  avdvfd = true;
        
 
         [Header("Axis Events Debug")]
@@ -526,7 +526,7 @@
         {
             if (buttonTwoButtonEvents)
             {
-                menu.SetActive(false);
+               // menu.SetActive(false);
             }
         }
 
