@@ -36,7 +36,7 @@
 
         protected virtual void Update()
         {
-            if (activate)
+            if (activate && !linkedObject.IsGrabbed())
             {
                 cube.SetActive(true);
             } else if (!activate)

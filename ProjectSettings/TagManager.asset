@@ -6,6 +6,18 @@ TagManager:
   tags:
   - ExcludeTeleport
   - MetalTrash
+  - GlassTrash
+  - Waste
+  - Leg
+  - SnapCube
+  - Arm
+  - SnapCylinder
+  - Saucers
+  - Torso
+  - Head
+  - PaperTrash
+  - PlasticTrash
+  - OrganicTrash
   layers:
   - Default
   - TransparentFX
