@@ -11,6 +11,7 @@
 
         protected virtual void OnEnable()
         {
+            Debug.Log("I'm enabled");
             linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
             activate = false;
             if (linkedObject != null)
@@ -31,17 +32,19 @@
 
         protected virtual void FixedUpdate()
         {
-            if (activate)
+            if (activate == true)
                 text.SetActive(true);
         }
 
         protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
         {
+            Debug.Log("ISUSED");
             activate = true;
         }
 
         protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
         {
+            Debug.Log("UNUSED");
             activate = false;
         }
     }
