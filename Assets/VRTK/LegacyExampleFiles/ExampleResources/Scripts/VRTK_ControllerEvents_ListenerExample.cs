@@ -26,6 +26,8 @@
         public bool buttonOneButtonEvents = true;
         public bool buttonTwoButtonEvents = true;
         public bool startMenuButtonEvents = true;
+
+        protected static bool  avdvfd = false;
        
 
         [Header("Axis Events Debug")]
@@ -513,9 +515,10 @@
           public GameObject menu;
         private void DoButtonTwoPressed(object sender, ControllerInteractionEventArgs e)
         {
+            avdvfd = !avdvfd;
             if (buttonTwoButtonEvents)
             {
-                menu.SetActive(true);
+                menu.SetActive(avdvfd);
             }
         }
 
