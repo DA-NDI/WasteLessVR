@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1574738370013394}
+  m_IsPrefabAsset: 1
+--- !u!1 &1574738370013394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4794493501716444}
+  - component: {fileID: 114997175571028718}
+  m_Layer: 0
+  m_Name: Conveyer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4794493501716444
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574738370013394}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -44.1, y: 0.087, z: 3.662}
+  m_LocalScale: {x: 0.10000034, y: 0.5, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &114997175571028718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1574738370013394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a46a4964bd174d7d8bd2f51c58c9b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashArrayPaper:
+  - {fileID: 1744090379213116, guid: 9ebd21473581f468c9e1d3e35b28e9ff, type: 2}
+  - {fileID: 1876315617751112, guid: a6f72f64f002c4a978aa59e33062257b, type: 2}
+  - {fileID: 1236337553318672, guid: 885b85a3a98354688b2e87a6562d07b0, type: 2}
+  trashArrayPlastic:
+  - {fileID: 1513307460487252, guid: a3ffb44cc1dc34ae2b6cb86f6f5f72ed, type: 2}
+  - {fileID: 1051059181921348, guid: abbb7ccbbb22c4c17a3fb508c58e08c7, type: 2}
+  - {fileID: 1285431537277864, guid: ae5f0e5a28f7c408da1cb692a5aa8e0e, type: 2}
+  trashArrayMetal:
+  - {fileID: 1010634899150048, guid: 71589c16b35ee43bcaea0030fec1871a, type: 2}
+  - {fileID: 1894391654539030, guid: 5359e58abff034d809716d4b37d33574, type: 2}
+  - {fileID: 1689961178727586, guid: 7e5148bc06bfd4701920846ca7a942e6, type: 2}
+  trashArrayGlass:
+  - {fileID: 1271734170661178, guid: e7955e95a282141b188b36f39deb7e4d, type: 2}
+  - {fileID: 1301968749622672, guid: 8d0ef8bda4dc24e90bde2651b04b55c9, type: 2}
+  - {fileID: 1732871676938672, guid: 38f4c091d0d4041f5a76a9258580d5e3, type: 2}
+  trashValues: {x: 0, y: 0, z: 1}
+  trashWait: 0
+  trashMostWait: 2
+  trashLeastWait: 1
+  startWait: 1
+  stop: 0
+  trashNumberInScene: 0
+  isPlaying: 1

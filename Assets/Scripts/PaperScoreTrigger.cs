@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class PaperScoreTrigger : MonoBehaviour {
 	public ScoreBoard scoreBoard;
+	public GameObject conveyer;
+
+	void Start(){
+		conveyer = GameObject.FindWithTag("ConveyerSpawner");
+	}
 	void OnTriggerEnter(Collider col){	
 		switch(col.tag){
 			case "PaperTrash":
 				{
                     Destroy(col.gameObject);
                     scoreBoard.handleScored();
+					conveyer.GetComponent<Conveyer>().decreaseTrashNumber();
                     break;
                 }
 			case "PlasticTrash":

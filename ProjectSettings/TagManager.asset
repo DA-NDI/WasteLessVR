@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ExcludeTeleport
   - MetalTrash
+  - PaperTrash
+  - GlassTrash
+  - PlasticTrash
+  - ConveyerSpawner
   layers:
   - Default
   - TransparentFX

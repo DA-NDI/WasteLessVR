@@ -16,16 +16,16 @@ public class Conveyer : MonoBehaviour {
 	public bool stop;
 	int randomTrashArray;
 	int randomTrashNum;
+	public int trashNumberInScene = 0;
 	public bool isPlaying = true;
 	
 	void Start () {
-		StartCoroutine(waitTrash());
-		
+		StartCoroutine(waitTrash());	
 	}
 	
 	
 	void Update () {
-		if(isPlaying){
+		if(isPlaying && trashNumberInScene<=15){
 			trashWait = Random.Range(trashLeastWait, trashMostWait);
 		}
 	}
@@ -34,34 +34,44 @@ public class Conveyer : MonoBehaviour {
 		isPlaying = false;
 	}
 
+	public void increaseTrashNumber(){
+		trashNumberInScene++;
+	}
+
+	public void decreaseTrashNumber(){
+		trashNumberInScene--;
+	}
+
 	IEnumerator waitTrash(){
 		yield return new WaitForSeconds(startWait);
-
 		while(isPlaying){
-			randomTrashArray = Random.Range(0, 4);
-			randomTrashNum = Random.Range(0, 3); 
-			Vector3 trashPosition = new Vector3(Random.Range(-trashValues.x, trashValues.x), 1, Random.Range(-trashValues.z, trashValues.z));
-			switch (randomTrashArray)
-			{
-					case 1:
-						Instantiate(trashArrayPaper[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-						break;
-					case 2:
-						Instantiate(trashArrayPlastic[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-						break;
-					case 3:
-						Instantiate(trashArrayMetal[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-						break;
-					case 4:
-						Instantiate(trashArrayGlass[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-						break;
-					// case 5:
-					// 	Instantiate(trashArrayWaste[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
-					// 	break;
-
-				} 
+			if(trashNumberInScene<=15){
+				randomTrashArray = Random.Range(0, 4);
+				randomTrashNum = Random.Range(0, 3); 
+				Vector3 trashPosition = new Vector3(Random.Range(-trashValues.x, trashValues.x), 1, Random.Range(-trashValues.z, trashValues.z));
+				switch (randomTrashArray)
+				{
+						case 1:
+							Instantiate(trashArrayPaper[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+							break;
+						case 2:
+							Instantiate(trashArrayPlastic[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+							break;
+						case 3:
+							Instantiate(trashArrayMetal[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+							break;
+						case 4:
+							Instantiate(trashArrayGlass[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+							break;
+						// case 5:
+						// 	Instantiate(trashArrayWaste[randomTrashNum], trashPosition + transform.TransformPoint(0,0,0), gameObject.transform.rotation);
+						// 	break;
+				}
+				increaseTrashNumber();
+			}
 			
 			yield return new WaitForSeconds(trashWait);
+		
 		}
 	}
 }
