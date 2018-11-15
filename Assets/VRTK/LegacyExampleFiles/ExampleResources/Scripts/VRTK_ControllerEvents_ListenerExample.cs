@@ -27,6 +27,9 @@
         public bool buttonTwoButtonEvents = true;
         public bool startMenuButtonEvents = true;
 
+        protected static bool  avdvfd = true;
+       
+
         [Header("Axis Events Debug")]
 
         public bool triggerAxisEvents = true;
@@ -509,12 +512,13 @@
                 DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "BUTTON ONE", "untouched", e);
             }
         }
-
+          public GameObject menu;
         private void DoButtonTwoPressed(object sender, ControllerInteractionEventArgs e)
         {
+            avdvfd = !avdvfd;
             if (buttonTwoButtonEvents)
             {
-                DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "BUTTON TWO", "pressed down", e);
+                menu.SetActive(avdvfd);
             }
         }
 
@@ -522,7 +526,7 @@
         {
             if (buttonTwoButtonEvents)
             {
-                DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "BUTTON TWO", "released", e);
+               // menu.SetActive(false);
             }
         }
 

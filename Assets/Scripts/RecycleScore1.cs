@@ -11,7 +11,7 @@ public class RecycleScore1 : MonoBehaviour {
 			scoreBoard1.handleScored();
 			Destroy(col.gameObject);
 		}
-		else
+		else if (col.tag == "Waste")
 			scoreBoard1.handleWrongScored();
 	}
 }

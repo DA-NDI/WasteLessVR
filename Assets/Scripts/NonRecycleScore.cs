@@ -18,6 +18,9 @@ public class NonRecycleScore : MonoBehaviour {
 			case "GlassTrash":
 				scoreBoard.handleWrongScored();
 				break;
+			case "OrganicTrash":
+				scoreBoard.handleWrongScored();
+				break;
 			case "Waste":
 			{
 				scoreBoard.handleScored();
