@@ -60,7 +60,7 @@ public class ScoreBoard : MonoBehaviour {
 		// }
 		
 
-		menuResultMsg.text = "Ви відсортували\nлише "+currentScore+" предметів";
+		menuResultMsg.text = "Відсортовано:"+currentScore;
 		menu.SetActive(true);
 		conveyer.stopConveyer();
 		currentTime = playTime;
@@ -92,7 +92,7 @@ public class ScoreBoard : MonoBehaviour {
 	public void handleWrongScored(){
 		if(isGameRunning){
 			startSound(errorScore);
-			currentScore--;
+			// currentScore--;
 		}
 	}
 	// Use this for initialization
