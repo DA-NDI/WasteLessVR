@@ -776,7 +776,7 @@ MonoBehaviour:
   trashWait: 0
   trashMostWait: 3
   trashLeastWait: 1
-  startWait: 1
+  startWait: 0
   stop: 0
   trashNumberInScene: 0
   isPlaying: 1
@@ -6487,7 +6487,7 @@ MonoBehaviour:
   playTime: 90
   currentScore: 0
   currentTime: 10
-  playMusic: {fileID: 8300000, guid: d9e62ad39635247b4b18da9f9df1aaae, type: 3}
+  playMusic: {fileID: 8300000, guid: e66994b9c99f44042a625804d02bf33d, type: 3}
   idleMusic: {fileID: 8300000, guid: 371e924e908a6433eb6c1b9a91d4c513, type: 3}
   endGameSound: {fileID: 8300000, guid: 1f572e99d534e4dfaba3d0c7bf43bd3a, type: 3}
   scoreSound: {fileID: 8300000, guid: 3609d8af7e2004c1aa4ad326065c9dc7, type: 3}
