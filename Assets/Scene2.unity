@@ -6491,7 +6491,7 @@ MonoBehaviour:
   idleMusic: {fileID: 8300000, guid: 371e924e908a6433eb6c1b9a91d4c513, type: 3}
   endGameSound: {fileID: 8300000, guid: 1f572e99d534e4dfaba3d0c7bf43bd3a, type: 3}
   scoreSound: {fileID: 8300000, guid: 3609d8af7e2004c1aa4ad326065c9dc7, type: 3}
-  errorScore: {fileID: 8300000, guid: 20212754079d14cfb8e5110dece25beb, type: 3}
+  errorScore: {fileID: 8300000, guid: e17195a38fac9415c8baff10b1b64e12, type: 3}
   musicAudioSource: {fileID: 0}
   txtTime: {fileID: 1119852238}
   txtScore: {fileID: 928539766}
