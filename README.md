@@ -19,7 +19,7 @@ In the game there are two scenes and main menu
 
 You have to grab and throw trash in proper container,
 
-recyclable and non-recyclable, you can find some trash even on the tree for a limited time
+recyclable and non-recyclable, you can find some trash even on the tree for. Time is limited
 
 You can use light beam (grip button) on object to receive hint
 
