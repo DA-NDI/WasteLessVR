@@ -15,11 +15,17 @@ It will definitely work with windows mr headset and might work also with htc viv
 
 In the game there are two scenes and main menu
 
-In first you have to grab and throw trash in proper container,
+## First scene:
 
-recyclable and non-recyclable, you can find some trash even on the tree
+You have to grab and throw trash in proper container,
 
-In second you just grab trash from conveyor and throw to proper container
+recyclable and non-recyclable, you can find some trash even on the tree for a limited time
+
+You can use light beam (grip button) on object to receive hint
+
+## Second scene
+
+You just grab trash from conveyor and throw to proper container, limited time
 
 Control management:
 
