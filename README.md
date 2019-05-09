@@ -43,7 +43,6 @@ Control management:
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/2.jpeg)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/3.jpeg)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/screen_5.jpeg)
-![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/5.png)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/6.png)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/7.png)
 
