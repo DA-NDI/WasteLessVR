@@ -38,9 +38,11 @@ Control management:
 ## Have fun!
 
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/1.png)
+![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/46507295_453853275141037_2736588431835529216_o.jpg)
+![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/46440229_453853708474327_9191107542447554560_o.jpg)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/2.jpeg)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/3.jpeg)
-![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/4.jpeg)
+![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/screen_5.jpeg)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/5.png)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/6.png)
 ![alt text](https://github.com/DA-NDI/WasteLessVR/blob/master/screenshots/7.png)
